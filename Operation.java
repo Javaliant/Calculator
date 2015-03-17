@@ -1,3 +1,7 @@
+/* Author: Luigi Vincent
+enum to compute calculator calculations
+*/
+
 public enum Operation implements Equation {
 	ADD((x, y) -> x + y),
 	SUBTRACT((x, y) -> x - y),
