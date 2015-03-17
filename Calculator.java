@@ -14,7 +14,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 
-public class Calculator {
+public class Calculator extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
@@ -22,7 +22,9 @@ public class Calculator {
 	@Override
 	public void start(Stage stage) {
 
-		stage.setScene(new Scene());
+		Label result = new Label("Result will go here");
+
+		stage.setScene(new Scene(result));
 		stage.show();
 	}
 }
