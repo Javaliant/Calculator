@@ -1,0 +1,55 @@
+.root {
+	calculator-base: linear-gradient(#2A5058, #61a2b1);
+	-fx-font-family: "Georgia";
+}
+
+.button {
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+	-fx-background-color: calculator-base;
+}
+.button:hover {
+    -fx-font-family: "Courier";
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2A5058 0%, #61a2b1 100%),
+        #2A5058,
+        #61a2b1,
+        radial-gradient(center 50% 50%, radius 100%, #61a2b1, #2A5058);
+    -fx-effect: dropshadow(gaussian , rgba(0,0,0,0.75) , 4,0,0,1);
+}
+.button:pressed {	
+	-fx-font-size: 1.1em;
+}
+
+.combo-box-base .arrow {
+	-fx-background-color: white;
+}
+
+.combo-box-base .arrow-button {
+	-fx-background-color: calculator-base;
+}
+
+.combo-box .cell {
+	-fx-text-fill: calculator-base;
+}
+.combo-box .cell:hover, .combo-box .cell:focused {
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+    -fx-background-color: calculator-base;
+}
+
+.label {
+	-fx-font-weight: bold;
+    -fx-text-fill: calculator-base;
+    -fx-padding: 4;
+}
+
+.hbox {
+	-fx-padding: 2;
+}
+
+.text-field {
+	-fx-text-fill: calculator-base;
+}
